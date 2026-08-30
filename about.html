@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - ESHOPPER</title>
+  <meta name="description" content="Learn about ESHOPPER - Our mission to connect you with verified vendors and curated products.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-links">
+          <a href="#"><i class="fas fa-leaf"></i> Fresh Picks Daily</a>
+          <span>|</span>
+          <a href="#">Sell on ESHOPPER</a>
+          <span>|</span>
+          <a href="#">Help & Support</a>
+        </div>
+        <div class="topbar-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-leaf"><i class="fas fa-leaf"></i></span>
+          ESHOPPER
+        </a>
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search products, vendors, categories...">
+        </div>
+        <div class="header-actions">
+          <button class="header-action-btn" aria-label="Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="count">3</span>
+          </button>
+          <button class="header-action-btn" aria-label="Cart" data-add>
+            <i class="fas fa-shopping-bag"></i>
+            <span class="count">0</span>
+          </button>
+          <button class="header-action-btn" aria-label="Account">
+            <i class="far fa-user"></i>
+          </button>
+          <button class="burger" id="burger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <div class="categories-dropdown" id="categoriesDropdown">
+          <button class="categories-trigger" id="catTrigger">
+            <i class="fas fa-bars"></i> All Categories <i class="fas fa-chevron-down" style="font-size:0.7rem"></i>
+          </button>
+          <div class="categories-menu" id="catMenu">
+            <a href="shop.html"><i class="fas fa-tshirt"></i> Fashion & Apparel</a>
+            <a href="shop.html"><i class="fas fa-laptop"></i> Electronics</a>
+            <a href="shop.html"><i class="fas fa-couch"></i> Home & Living</a>
+            <a href="shop.html"><i class="fas fa-spa"></i> Beauty & Wellness</a>
+            <a href="shop.html"><i class="fas fa-dumbbell"></i> Sports & Outdoors</a>
+            <a href="shop.html"><i class="fas fa-baby"></i> Kids & Baby</a>
+          </div>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header-title reveal">About ESHOPPER</h1>
+      <div class="page-header-breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> About Us
+      </div>
+    </div>
+  </section>
+
+  <!-- About Intro -->
+  <section class="section">
+    <div class="container">
+      <div class="about-intro-grid reveal">
+        <div class="about-intro-text">
+          <h2>We're Changing the Way People <span>Shop Online</span></h2>
+          <p>ESHOPPER was founded with a simple mission: create a trusted marketplace where quality vendors can reach customers who care about what they buy. We believe that every purchase should come with confidence.</p>
+          <p>Our vendor verification process ensures that every seller on our platform meets strict quality and reliability standards. From organic lifestyle brands to cutting-edge electronics, we curate vendors who share our commitment to excellence.</p>
+          <div class="about-highlights">
+            <div class="about-highlight">
+              <i class="fas fa-check-circle"></i> Verified & trusted vendors
+            </div>
+            <div class="about-highlight">
+              <i class="fas fa-check-circle"></i> Quality guaranteed on every product
+            </div>
+            <div class="about-highlight">
+              <i class="fas fa-check-circle"></i> Responsive customer support
+            </div>
+            <div class="about-highlight">
+              <i class="fas fa-check-circle"></i> Easy returns & secure payments
+            </div>
+          </div>
+        </div>
+        <div class="about-intro-image">
+          <img src="assets/img/carousel-2.jpg" alt="Our marketplace">
+          <div class="about-intro-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="about-stats reveal">
+        <div class="about-stat">
+          <div class="about-stat-icon"><i class="fas fa-store"></i></div>
+          <div class="about-stat-num">180+</div>
+          <div class="about-stat-label">Verified Vendors</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-icon"><i class="fas fa-box-open"></i></div>
+          <div class="about-stat-num">2,400+</div>
+          <div class="about-stat-label">Products Listed</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-icon"><i class="fas fa-users"></i></div>
+          <div class="about-stat-num">50,000+</div>
+          <div class="about-stat-label">Happy Customers</div>
+        </div>
+        <div class="about-stat">
+          <div class="about-stat-icon"><i class="fas fa-globe"></i></div>
+          <div class="about-stat-num">35+</div>
+          <div class="about-stat-label">Countries Served</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Why Choose ESHOPPER</h2>
+      <p class="section-subtitle reveal">What sets our marketplace apart from the rest</p>
+      <div class="about-features-grid">
+        <div class="about-feature-card reveal">
+          <div class="about-feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Vendor Verification</h4>
+          <p>Every vendor goes through a rigorous vetting process including background checks, product quality reviews, and customer satisfaction scoring before being approved on our platform.</p>
+        </div>
+        <div class="about-feature-card reveal">
+          <div class="about-feature-icon"><i class="fas fa-leaf"></i></div>
+          <h4>Curated Selection</h4>
+          <p>Our team hand-picks vendors and products that meet our quality standards. We focus on unique, sustainable, and artisan goods that you won't find in mass-market stores.</p>
+        </div>
+        <div class="about-feature-card reveal">
+          <div class="about-feature-icon"><i class="fas fa-exchange-alt"></i></div>
+          <h4>Smart Comparison</h4>
+          <p>Use our product comparison tool to make informed decisions. Select multiple items and compare features, prices, and vendor ratings side by side before you buy.</p>
+        </div>
+        <div class="about-feature-card reveal">
+          <div class="about-feature-icon"><i class="fas fa-undo"></i></div>
+          <h4>Buyer Protection</h4>
+          <p>Shop with confidence knowing every purchase is protected. If something isn't right, our hassle-free return policy and dedicated support team have you covered.</p>
+        </div>
+        <div class="about-feature-card reveal">
+          <div class="about-feature-icon"><i class="fas fa-truck"></i></div>
+          <h4>Reliable Shipping</h4>
+          <p>We partner with top logistics providers to ensure your orders arrive safely and on time. Free shipping on orders over $50 with real-time tracking included.</p>
+        </div>
+        <div class="about-feature-card reveal">
+          <div class="about-feature-icon"><i class="fas fa-headset"></i></div>
+          <h4>24/7 Support</h4>
+          <p>Our customer support team is available around the clock to help with any questions, concerns, or issues you might have. We're just a message away.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team / Featured Vendors -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Featured Vendor Partners</h2>
+      <p class="section-subtitle reveal">Meet some of the incredible vendors who make our marketplace thrive</p>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-img">
+            <img src="assets/img/vendor-1.jpg" alt="Green Leaf Co.">
+            <span class="badge badge-verified">Verified</span>
+          </div>
+          <h4>Green Leaf Co.</h4>
+          <p class="team-role">Sustainable Fashion</p>
+          <p class="team-location"><i class="fas fa-map-marker-alt"></i> Portland, OR</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-img">
+            <img src="assets/img/vendor-2.jpg" alt="Urban Thread">
+            <span class="badge badge-verified">Verified</span>
+          </div>
+          <h4>Urban Thread</h4>
+          <p class="team-role">Modern Apparel</p>
+          <p class="team-location"><i class="fas fa-map-marker-alt"></i> Brooklyn, NY</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-img">
+            <img src="assets/img/vendor-3.jpg" alt="TechNest">
+            <span class="badge badge-verified">Verified</span>
+          </div>
+          <h4>TechNest</h4>
+          <p class="team-role">Premium Electronics</p>
+          <p class="team-location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
+        </div>
+        <div class="team-card reveal">
+          <div class="team-img">
+            <img src="assets/img/vendor-4.jpg" alt="Artisan Home">
+            <span class="badge badge-verified">Verified</span>
+          </div>
+          <h4>Artisan Home</h4>
+          <p class="team-role">Handcrafted Decor</p>
+          <p class="team-location"><i class="fas fa-map-marker-alt"></i> Austin, TX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner reveal">
+        <h2>Stay in the Loop</h2>
+        <p>Get the latest product drops, vendor spotlights, and exclusive deals delivered to your inbox.</p>
+        <form class="newsletter-form" data-form>
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-leaf"><i class="fas fa-leaf"></i></span>
+            ESHOPPER
+          </a>
+          <p>Your trusted online marketplace connecting you with verified vendors and curated products. Quality guaranteed.</p>
+          <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Market Street, New York, USA</p>
+            <p><i class="fas fa-envelope"></i> hello@eshopper.com</p>
+            <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Become a Vendor</a>
+          </div>
+        </div>
+        <div>
+          <h4>Customer Care</h4>
+          <div class="footer-links">
+            <a href="#">My Account</a>
+            <a href="#">Order Tracking</a>
+            <a href="#">Returns & Refunds</a>
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size:0.85rem; margin-bottom:1rem">Subscribe for deals and new vendor announcements.</p>
+          <form class="footer-newsletter-form" data-form>
+            <input type="email" placeholder="Your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> ESHOPPER. All rights reserved.</p>
+        <div class="footer-payments">
+          <span>VISA</span>
+          <span>MC</span>
+          <span>AMEX</span>
+          <span>PayPal</span>
+          <span>Apple Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"><span class="toast-icon"><i class="fas fa-check-circle"></i></span> Added to cart!</div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
