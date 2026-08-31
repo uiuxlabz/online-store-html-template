@@ -4,6 +4,10 @@ A premium, framework-free online marketplace template built with semantic HTML, 
 
 **Live demo concept:** Vendor-verified marketplace with product browsing, category filtering, shopping cart, contact forms, and newsletter integration — all without a single framework dependency.
 
+## 📸 Screenshot
+
+![Homepage Preview](screenshot.png)
+
 ## Pages
 
 | Page | File | Purpose |
