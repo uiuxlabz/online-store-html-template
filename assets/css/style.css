@@ -66,6 +66,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
 
 /* --- Utility --- */
 .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 4rem 0; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 .text-center { text-align: center; }
 .text-green { color: var(--green); }
@@ -959,6 +960,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
   padding: 3rem 0;
 }
 .shop-sidebar { position: sticky; top: 80px; align-self: start; }
+.shop-main { min-width: 0; }
 .sidebar-section {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -1002,6 +1004,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
 }
 .accordion-body.open { max-height: 300px; }
 .accordion-body-inner { padding: 0.5rem 0 1rem; }
+.filter-options { display: flex; flex-direction: column; }
 .filter-option {
   display: flex;
   align-items: center;
@@ -1100,8 +1103,19 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
   align-items: center;
   padding: 4rem 0;
 }
-.about-img { border-radius: var(--radius-xl); overflow: hidden; }
+.about-img { position: relative; border-radius: var(--radius-xl); overflow: hidden; }
 .about-img img { width: 100%; height: auto; }
+.about-intro-accent {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 80px;
+  height: 80px;
+  border: 6px solid var(--green);
+  border-radius: var(--radius);
+  opacity: 0.3;
+  pointer-events: none;
+}
 .about-text h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   margin-bottom: 1rem;
@@ -1133,6 +1147,35 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
 .about-feature h5 { font-size: 0.88rem; margin-bottom: 0.15rem; }
 .about-feature p { font-size: 0.8rem; margin: 0; }
 
+/* --- Stats Band (about) --- */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.about-stat {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-100);
+}
+.about-stat-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  background: var(--mint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green);
+  margin: 0 auto 1rem;
+  font-size: 1.1rem;
+}
+.about-stat-num { font-size: 1.6rem; font-weight: 700; color: var(--navy); }
+.about-stat-label { font-size: 0.85rem; color: var(--gray-500); margin-top: 0.2rem; }
+
 /* --- Team / Vendors Showcase (about) --- */
 .team-grid {
   display: grid;
@@ -1149,6 +1192,8 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
   transition: all var(--transition);
 }
 .team-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.team-img { position: relative; display: inline-block; margin-bottom: 0.5rem; }
+.team-img .badge-verified { position: absolute; bottom: 6px; right: 0; }
 .team-card img {
   width: 90px;
   height: 90px;
@@ -1169,6 +1214,14 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
   padding: 4rem 0;
 }
 .contact-form .form-group { margin-bottom: 1.25rem; }
+.contact-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 640px) {
+  .contact-form-row { grid-template-columns: 1fr; }
+}
 .contact-form label {
   display: block;
   font-size: 0.85rem;
@@ -1248,6 +1301,17 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
   font-size: 0.9rem;
   border: 1px solid var(--gray-200);
 }
+.contact-map-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  padding: 2rem;
+}
+.contact-map-placeholder i { font-size: 2rem; color: var(--gray-400); }
+.contact-map-placeholder p { font-size: 0.9rem; color: var(--gray-500); margin: 0; }
 
 /* --- Footer --- */
 .footer {
