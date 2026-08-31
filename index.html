@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESHOPPER - Online Marketplace</title>
+  <meta name="description" content="ESHOPPER - Discover curated products from verified vendors. Your trusted online marketplace for quality goods.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-links">
+          <a href="#"><i class="fas fa-leaf"></i> Fresh Picks Daily</a>
+          <span>|</span>
+          <a href="#">Sell on ESHOPPER</a>
+          <span>|</span>
+          <a href="#">Help & Support</a>
+        </div>
+        <div class="topbar-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-leaf"><i class="fas fa-leaf"></i></span>
+          ESHOPPER
+        </a>
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search products, vendors, categories...">
+        </div>
+        <div class="header-actions">
+          <button class="header-action-btn" aria-label="Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="count">3</span>
+          </button>
+          <button class="header-action-btn" aria-label="Cart" data-add>
+            <i class="fas fa-shopping-bag"></i>
+            <span class="count">0</span>
+          </button>
+          <button class="header-action-btn" aria-label="Account">
+            <i class="far fa-user"></i>
+          </button>
+          <button class="burger" id="burger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <div class="categories-dropdown" id="categoriesDropdown">
+          <button class="categories-trigger" id="catTrigger">
+            <i class="fas fa-bars"></i> All Categories <i class="fas fa-chevron-down" style="font-size:0.7rem"></i>
+          </button>
+          <div class="categories-menu" id="catMenu">
+            <a href="shop.html"><i class="fas fa-tshirt"></i> Fashion & Apparel <span class="cat-count">1,240</span></a>
+            <a href="shop.html"><i class="fas fa-laptop"></i> Electronics <span class="cat-count">856</span></a>
+            <a href="shop.html"><i class="fas fa-couch"></i> Home & Living <span class="cat-count">634</span></a>
+            <a href="shop.html"><i class="fas fa-spa"></i> Beauty & Wellness <span class="cat-count">423</span></a>
+            <a href="shop.html"><i class="fas fa-dumbbell"></i> Sports & Outdoors <span class="cat-count">312</span></a>
+            <a href="shop.html"><i class="fas fa-baby"></i> Kids & Baby <span class="cat-count">289</span></a>
+            <a href="shop.html"><i class="fas fa-utensils"></i> Food & Grocery <span class="cat-count">567</span></a>
+            <a href="shop.html"><i class="fas fa-book"></i> Books & Stationery <span class="cat-count">198</span></a>
+          </div>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html" class="active">Home</a>
+          <a href="shop.html">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/img/carousel-1.jpg" alt="Marketplace hero">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-grid">
+          <div class="hero-text reveal">
+            <h1>Discover <span>Trusted Vendors</span> & Unique Products</h1>
+            <p>Shop from hundreds of verified vendors offering curated collections. Quality guaranteed, delivered to your doorstep.</p>
+            <div class="hero-buttons">
+              <a href="shop.html" class="btn btn-primary btn-lg"><i class="fas fa-shopping-bag"></i> Explore Shop</a>
+              <a href="about.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);color:var(--white)"><i class="fas fa-play-circle"></i> Meet Our Vendors</a>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="num">2,400+</div>
+                <div class="label">Products</div>
+              </div>
+              <div class="hero-stat">
+                <div class="num">180+</div>
+                <div class="label">Vendors</div>
+              </div>
+              <div class="hero-stat">
+                <div class="num">98%</div>
+                <div class="label">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-vendors reveal">
+            <div class="hero-vendor-card">
+              <img src="assets/img/vendor-1.jpg" alt="Vendor" class="hero-vendor-img">
+              <div class="hero-vendor-info">
+                <h4>Green Leaf Co.</h4>
+                <p>Organic & Sustainable</p>
+              </div>
+            </div>
+            <div class="hero-vendor-card">
+              <img src="assets/img/vendor-2.jpg" alt="Vendor" class="hero-vendor-img">
+              <div class="hero-vendor-info">
+                <h4>Urban Thread</h4>
+                <p>Modern Fashion</p>
+              </div>
+            </div>
+            <div class="hero-vendor-card">
+              <img src="assets/img/vendor-3.jpg" alt="Vendor" class="hero-vendor-img">
+              <div class="hero-vendor-info">
+                <h4>TechNest</h4>
+                <p>Premium Electronics</p>
+              </div>
+            </div>
+            <div class="hero-vendor-card">
+              <img src="assets/img/vendor-4.jpg" alt="Vendor" class="hero-vendor-img">
+              <div class="hero-vendor-info">
+                <h4>Artisan Home</h4>
+                <p>Handcrafted Decor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Bar -->
+  <section class="features-bar">
+    <div class="container">
+      <div class="features-grid reveal">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <div>
+            <h5>Verified Vendors</h5>
+            <p>Every seller is vetted</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-truck"></i></div>
+          <div>
+            <h5>Free Shipping</h5>
+            <p>On orders over $50</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-undo"></i></div>
+          <div>
+            <h5>Easy Returns</h5>
+            <p>30-day return policy</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <div>
+            <h5>24/7 Support</h5>
+            <p>Dedicated help center</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="categories">
+    <div class="container">
+      <h2 class="section-title reveal">Browse Categories</h2>
+      <p class="section-subtitle reveal">Find exactly what you need from our curated collection of categories</p>
+      <div class="categories-grid">
+        <a href="shop.html" class="cat-card reveal">
+          <img src="assets/img/cat-1.jpg" alt="Fashion">
+          <div class="cat-card-overlay">
+            <h3>Fashion & Apparel</h3>
+            <span>1,240 products</span>
+          </div>
+        </a>
+        <a href="shop.html" class="cat-card reveal">
+          <img src="assets/img/cat-2.jpg" alt="Electronics">
+          <div class="cat-card-overlay">
+            <h3>Electronics</h3>
+            <span>856 products</span>
+          </div>
+        </a>
+        <a href="shop.html" class="cat-card reveal">
+          <img src="assets/img/cat-3.jpg" alt="Home & Living">
+          <div class="cat-card-overlay">
+            <h3>Home & Living</h3>
+            <span>634 products</span>
+          </div>
+        </a>
+        <a href="shop.html" class="cat-card reveal">
+          <img src="assets/img/cat-4.jpg" alt="Beauty">
+          <div class="cat-card-overlay">
+            <h3>Beauty & Wellness</h3>
+            <span>423 products</span>
+          </div>
+        </a>
+        <a href="shop.html" class="cat-card reveal">
+          <img src="assets/img/cat-5.jpg" alt="Sports">
+          <div class="cat-card-overlay">
+            <h3>Sports & Outdoors</h3>
+            <span>312 products</span>
+          </div>
+        </a>
+        <a href="shop.html" class="cat-card reveal">
+          <img src="assets/img/cat-6.jpg" alt="Kids">
+          <div class="cat-card-overlay">
+            <h3>Kids & Baby</h3>
+            <span>289 products</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trending Products -->
+  <section class="products">
+    <div class="container">
+      <h2 class="section-title reveal">Trending Products</h2>
+      <p class="section-subtitle reveal">Hand-picked favorites from our top vendors this week</p>
+      <div class="product-grid">
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="assets/img/product-1.jpg" alt="Stylish Summer Dress">
+            <div class="product-badges"><span class="badge badge-green">New</span></div>
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-vendor"><span class="badge badge-verified">Verified</span> Urban Thread</div>
+            <h4>Stylish Summer Dress</h4>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(128)</span></div>
+            <div class="product-price"><span class="current">$89.00</span><span class="original">$129.00</span></div>
+          </div>
+          <div class="product-footer">
+            <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="assets/img/product-2.jpg" alt="Premium Cotton Blazer">
+            <div class="product-badges"><span class="badge badge-amber">-20%</span></div>
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-vendor"><span class="badge badge-verified">Verified</span> Green Leaf Co.</div>
+            <h4>Premium Cotton Blazer</h4>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>(87)</span></div>
+            <div class="product-price"><span class="current">$156.00</span><span class="original">$195.00</span></div>
+          </div>
+          <div class="product-footer">
+            <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="assets/img/product-3.jpg" alt="Designer Leather Handbag">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-vendor"><span class="badge badge-verified">Verified</span> Artisan Home</div>
+            <h4>Designer Leather Handbag</h4>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(214)</span></div>
+            <div class="product-price"><span class="current">$245.00</span></div>
+          </div>
+          <div class="product-footer">
+            <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="assets/img/product-4.jpg" alt="Wireless Noise-Cancelling Headphones">
+            <div class="product-badges"><span class="badge badge-green">Best Seller</span></div>
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-vendor"><span class="badge badge-verified">Verified</span> TechNest</div>
+            <h4>Wireless NC Headphones</h4>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(342)</span></div>
+            <div class="product-price"><span class="current">$199.00</span><span class="original">$279.00</span></div>
+          </div>
+          <div class="product-footer">
+            <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="assets/img/product-5.jpg" alt="Organic Cotton T-Shirt">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-vendor"><span class="badge badge-verified">Verified</span> Green Leaf Co.</div>
+            <h4>Organic Cotton T-Shirt</h4>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>(96)</span></div>
+            <div class="product-price"><span class="current">$34.00</span><span class="original">$45.00</span></div>
+          </div>
+          <div class="product-footer">
+            <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="assets/img/product-6.jpg" alt="Handcrafted Ceramic Vase">
+            <div class="product-badges"><span class="badge badge-amber">-15%</span></div>
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-vendor"><span class="badge badge-verified">Verified</span> Artisan Home</div>
+            <h4>Handcrafted Ceramic Vase</h4>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(58)</span></div>
+            <div class="product-price"><span class="current">$68.00</span><span class="original">$80.00</span></div>
+          </div>
+          <div class="product-footer">
+            <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="assets/img/product-7.jpg" alt="Smart Fitness Watch">
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-vendor"><span class="badge badge-verified">Verified</span> TechNest</div>
+            <h4>Smart Fitness Watch</h4>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(189)</span></div>
+            <div class="product-price"><span class="current">$329.00</span><span class="original">$399.00</span></div>
+          </div>
+          <div class="product-footer">
+            <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="assets/img/product-8.jpg" alt="Minimalist Desk Lamp">
+            <div class="product-badges"><span class="badge badge-green">New</span></div>
+            <div class="product-actions">
+              <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+              <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+            </div>
+          </div>
+          <div class="product-body">
+            <div class="product-vendor"><span class="badge badge-verified">Verified</span> Artisan Home</div>
+            <h4>Minimalist Desk Lamp</h4>
+            <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>(72)</span></div>
+            <div class="product-price"><span class="current">$79.00</span></div>
+          </div>
+          <div class="product-footer">
+            <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers -->
+  <section class="offers">
+    <div class="container">
+      <div class="offers-grid">
+        <div class="offer-card dark reveal">
+          <img src="assets/img/offer-1.png" alt="Spring Collection">
+          <div class="offer-content">
+            <span class="offer-tag">Limited Time</span>
+            <h3>Spring Collection</h3>
+            <p>Up to 30% off seasonal favorites from top vendors</p>
+            <a href="shop.html" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="offer-card green reveal">
+          <img src="assets/img/offer-2.png" alt="New Arrivals">
+          <div class="offer-content">
+            <span class="offer-tag">Just Dropped</span>
+            <h3>New Arrivals Weekly</h3>
+            <p>Fresh styles and products added every week</p>
+            <a href="shop.html" class="btn btn-primary">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vendors -->
+  <section class="vendors">
+    <div class="container">
+      <h2 class="section-title reveal">Featured Vendors</h2>
+      <p class="section-subtitle reveal">Meet the trusted sellers behind our curated marketplace</p>
+      <div class="vendors-grid">
+        <div class="vendor-card reveal">
+          <img src="assets/img/vendor-1.jpg" alt="Green Leaf Co." class="vendor-img">
+          <h4>Green Leaf Co.</h4>
+          <div class="vendor-location"><i class="fas fa-map-marker-alt"></i> Portland, OR</div>
+          <div class="vendor-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.8 (234)</span></div>
+          <span class="badge badge-verified">Verified Vendor</span>
+          <div class="vendor-products-count" style="margin-top:0.5rem">142 Products</div>
+        </div>
+        <div class="vendor-card reveal">
+          <img src="assets/img/vendor-2.jpg" alt="Urban Thread" class="vendor-img">
+          <h4>Urban Thread</h4>
+          <div class="vendor-location"><i class="fas fa-map-marker-alt"></i> Brooklyn, NY</div>
+          <div class="vendor-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>4.9 (512)</span></div>
+          <span class="badge badge-verified">Verified Vendor</span>
+          <div class="vendor-products-count" style="margin-top:0.5rem">267 Products</div>
+        </div>
+        <div class="vendor-card reveal">
+          <img src="assets/img/vendor-3.jpg" alt="TechNest" class="vendor-img">
+          <h4>TechNest</h4>
+          <div class="vendor-location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</div>
+          <div class="vendor-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>4.6 (189)</span></div>
+          <span class="badge badge-verified">Verified Vendor</span>
+          <div class="vendor-products-count" style="margin-top:0.5rem">98 Products</div>
+        </div>
+        <div class="vendor-card reveal">
+          <img src="assets/img/vendor-4.jpg" alt="Artisan Home" class="vendor-img">
+          <h4>Artisan Home</h4>
+          <div class="vendor-location"><i class="fas fa-map-marker-alt"></i> Austin, TX</div>
+          <div class="vendor-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>4.7 (321)</span></div>
+          <span class="badge badge-verified">Verified Vendor</span>
+          <div class="vendor-products-count" style="margin-top:0.5rem">183 Products</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title reveal">What Our Customers Say</h2>
+      <p class="section-subtitle reveal">Real reviews from real shoppers who trust our vendors</p>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"The vendor verification process gives me confidence. Every product I've received has been exactly as described. The quality is consistently excellent."</p>
+          <div class="testimonial-author">
+            <img src="assets/img/vendor-5.jpg" alt="Sarah M.">
+            <div>
+              <h5>Sarah M.</h5>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>"I love the variety on ESHOPPER. Found unique handmade items I couldn't find anywhere else. The vendors are responsive and shipping is always fast."</p>
+          <div class="testimonial-author">
+            <img src="assets/img/vendor-6.jpg" alt="James K.">
+            <div>
+              <h5>James K.</h5>
+              <span>Repeat Customer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+          <p>"The compare feature is a game changer. Being able to check products side by side before buying has saved me so much time. Highly recommend!"</p>
+          <div class="testimonial-author">
+            <img src="assets/img/vendor-7.jpg" alt="Lisa R.">
+            <div>
+              <h5>Lisa R.</h5>
+              <span>Power Shopper</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-inner reveal">
+        <h2>Stay in the Loop</h2>
+        <p>Get the latest product drops, vendor spotlights, and exclusive deals delivered to your inbox.</p>
+        <form class="newsletter-form" data-form>
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-leaf"><i class="fas fa-leaf"></i></span>
+            ESHOPPER
+          </a>
+          <p>Your trusted online marketplace connecting you with verified vendors and curated products. Quality guaranteed.</p>
+          <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Market Street, New York, USA</p>
+            <p><i class="fas fa-envelope"></i> hello@eshopper.com</p>
+            <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Become a Vendor</a>
+          </div>
+        </div>
+        <div>
+          <h4>Customer Care</h4>
+          <div class="footer-links">
+            <a href="#">My Account</a>
+            <a href="#">Order Tracking</a>
+            <a href="#">Returns & Refunds</a>
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size:0.85rem; margin-bottom:1rem">Subscribe for deals and new vendor announcements.</p>
+          <form class="footer-newsletter-form" data-form>
+            <input type="email" placeholder="Your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> ESHOPPER. All rights reserved.</p>
+        <div class="footer-payments">
+          <span>VISA</span>
+          <span>MC</span>
+          <span>AMEX</span>
+          <span>PayPal</span>
+          <span>Apple Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"><span class="toast-icon"><i class="fas fa-check-circle"></i></span> Added to cart!</div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

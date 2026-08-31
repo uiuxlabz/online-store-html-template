@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - ESHOPPER</title>
+  <meta name="description" content="Browse our curated marketplace. Shop from verified vendors across multiple categories.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-inner">
+        <div class="topbar-links">
+          <a href="#"><i class="fas fa-leaf"></i> Fresh Picks Daily</a>
+          <span>|</span>
+          <a href="#">Sell on ESHOPPER</a>
+          <span>|</span>
+          <a href="#">Help & Support</a>
+        </div>
+        <div class="topbar-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-leaf"><i class="fas fa-leaf"></i></span>
+          ESHOPPER
+        </a>
+        <div class="search-bar">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" placeholder="Search products, vendors, categories...">
+        </div>
+        <div class="header-actions">
+          <button class="header-action-btn" aria-label="Wishlist">
+            <i class="far fa-heart"></i>
+            <span class="count">3</span>
+          </button>
+          <button class="header-action-btn" aria-label="Cart" data-add>
+            <i class="fas fa-shopping-bag"></i>
+            <span class="count">0</span>
+          </button>
+          <button class="header-action-btn" aria-label="Account">
+            <i class="far fa-user"></i>
+          </button>
+          <button class="burger" id="burger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="navbar-inner">
+        <div class="categories-dropdown" id="categoriesDropdown">
+          <button class="categories-trigger" id="catTrigger">
+            <i class="fas fa-bars"></i> All Categories <i class="fas fa-chevron-down" style="font-size:0.7rem"></i>
+          </button>
+          <div class="categories-menu" id="catMenu">
+            <a href="shop.html"><i class="fas fa-tshirt"></i> Fashion & Apparel</a>
+            <a href="shop.html"><i class="fas fa-laptop"></i> Electronics</a>
+            <a href="shop.html"><i class="fas fa-couch"></i> Home & Living</a>
+            <a href="shop.html"><i class="fas fa-spa"></i> Beauty & Wellness</a>
+            <a href="shop.html"><i class="fas fa-dumbbell"></i> Sports & Outdoors</a>
+            <a href="shop.html"><i class="fas fa-baby"></i> Kids & Baby</a>
+          </div>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="shop.html" class="active">Shop</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-header-title reveal">Shop All Products</h1>
+      <div class="page-header-breadcrumb">
+        <a href="index.html">Home</a> <span>/</span> Shop
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Content -->
+  <section class="section">
+    <div class="container">
+      <div class="shop-layout">
+        <!-- Sidebar -->
+        <aside class="shop-sidebar reveal">
+          <div class="shop-sidebar-section">
+            <h4 class="shop-sidebar-title" data-accordion>
+              <span>Categories</span>
+              <i class="fas fa-chevron-down"></i>
+            </h4>
+            <div class="shop-sidebar-content" data-accordion-content>
+              <a href="shop.html" class="shop-sidebar-link active">All Products <span>(248)</span></a>
+              <a href="shop.html" class="shop-sidebar-link">Fashion & Apparel <span>(1,240)</span></a>
+              <a href="shop.html" class="shop-sidebar-link">Electronics <span>(856)</span></a>
+              <a href="shop.html" class="shop-sidebar-link">Home & Living <span>(634)</span></a>
+              <a href="shop.html" class="shop-sidebar-link">Beauty & Wellness <span>(423)</span></a>
+              <a href="shop.html" class="shop-sidebar-link">Sports & Outdoors <span>(312)</span></a>
+              <a href="shop.html" class="shop-sidebar-link">Kids & Baby <span>(289)</span></a>
+              <a href="shop.html" class="shop-sidebar-link">Food & Grocery <span>(567)</span></a>
+              <a href="shop.html" class="shop-sidebar-link">Books & Stationery <span>(198)</span></a>
+            </div>
+          </div>
+
+          <div class="shop-sidebar-section">
+            <h4 class="shop-sidebar-title" data-accordion>
+              <span>Price Range</span>
+              <i class="fas fa-chevron-down"></i>
+            </h4>
+            <div class="shop-sidebar-content" data-accordion-content>
+              <div class="shop-filter-options">
+                <label class="shop-filter-option">
+                  <input type="checkbox"> Under $25 <span>(64)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> $25 - $50 <span>(98)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> $50 - $100 <span>(72)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> $100 - $200 <span>(34)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> $200+ <span>(18)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-sidebar-section">
+            <h4 class="shop-sidebar-title" data-accordion>
+              <span>Vendor</span>
+              <i class="fas fa-chevron-down"></i>
+            </h4>
+            <div class="shop-sidebar-content" data-accordion-content>
+              <div class="shop-filter-options">
+                <label class="shop-filter-option">
+                  <input type="checkbox"> Green Leaf Co. <span>(42)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> Urban Thread <span>(56)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> TechNest <span>(31)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> Artisan Home <span>(28)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> Other <span>(91)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-sidebar-section">
+            <h4 class="shop-sidebar-title" data-accordion>
+              <span>Size</span>
+              <i class="fas fa-chevron-down"></i>
+            </h4>
+            <div class="shop-sidebar-content" data-accordion-content>
+              <div class="shop-filter-options">
+                <label class="shop-filter-option">
+                  <input type="checkbox"> XS <span>(18)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> S <span>(34)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> M <span>(52)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> L <span>(48)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> XL <span>(26)</span>
+                </label>
+                <label class="shop-filter-option">
+                  <input type="checkbox"> XXL <span>(12)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div class="shop-main">
+          <div class="shop-toolbar">
+            <div class="shop-result-count">Showing 1-8 of 248 results</div>
+            <select class="shop-sort">
+              <option value="featured">Sort by: Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Best Rating</option>
+            </select>
+          </div>
+
+          <div class="product-grid shop-grid">
+            <div class="product-card reveal">
+              <div class="product-img">
+                <img src="assets/img/product-1.jpg" alt="Stylish Summer Dress">
+                <div class="product-badges"><span class="badge badge-green">New</span></div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                  <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-vendor"><span class="badge badge-verified">Verified</span> Urban Thread</div>
+                <h4>Stylish Summer Dress</h4>
+                <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(128)</span></div>
+                <div class="product-price"><span class="current">$89.00</span><span class="original">$129.00</span></div>
+              </div>
+              <div class="product-footer">
+                <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card reveal">
+              <div class="product-img">
+                <img src="assets/img/product-2.jpg" alt="Premium Cotton Blazer">
+                <div class="product-badges"><span class="badge badge-amber">-20%</span></div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                  <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-vendor"><span class="badge badge-verified">Verified</span> Green Leaf Co.</div>
+                <h4>Premium Cotton Blazer</h4>
+                <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>(87)</span></div>
+                <div class="product-price"><span class="current">$156.00</span><span class="original">$195.00</span></div>
+              </div>
+              <div class="product-footer">
+                <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card reveal">
+              <div class="product-img">
+                <img src="assets/img/product-3.jpg" alt="Designer Leather Handbag">
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                  <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-vendor"><span class="badge badge-verified">Verified</span> Artisan Home</div>
+                <h4>Designer Leather Handbag</h4>
+                <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(214)</span></div>
+                <div class="product-price"><span class="current">$245.00</span></div>
+              </div>
+              <div class="product-footer">
+                <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card reveal">
+              <div class="product-img">
+                <img src="assets/img/product-4.jpg" alt="Wireless Noise-Cancelling Headphones">
+                <div class="product-badges"><span class="badge badge-green">Best Seller</span></div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                  <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-vendor"><span class="badge badge-verified">Verified</span> TechNest</div>
+                <h4>Wireless NC Headphones</h4>
+                <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(342)</span></div>
+                <div class="product-price"><span class="current">$199.00</span><span class="original">$279.00</span></div>
+              </div>
+              <div class="product-footer">
+                <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card reveal">
+              <div class="product-img">
+                <img src="assets/img/product-5.jpg" alt="Organic Cotton T-Shirt">
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                  <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-vendor"><span class="badge badge-verified">Verified</span> Green Leaf Co.</div>
+                <h4>Organic Cotton T-Shirt</h4>
+                <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>(96)</span></div>
+                <div class="product-price"><span class="current">$34.00</span><span class="original">$45.00</span></div>
+              </div>
+              <div class="product-footer">
+                <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card reveal">
+              <div class="product-img">
+                <img src="assets/img/product-6.jpg" alt="Handcrafted Ceramic Vase">
+                <div class="product-badges"><span class="badge badge-amber">-15%</span></div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                  <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-vendor"><span class="badge badge-verified">Verified</span> Artisan Home</div>
+                <h4>Handcrafted Ceramic Vase</h4>
+                <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> <span>(58)</span></div>
+                <div class="product-price"><span class="current">$68.00</span><span class="original">$80.00</span></div>
+              </div>
+              <div class="product-footer">
+                <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card reveal">
+              <div class="product-img">
+                <img src="assets/img/product-7.jpg" alt="Smart Fitness Watch">
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                  <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-vendor"><span class="badge badge-verified">Verified</span> TechNest</div>
+                <h4>Smart Fitness Watch</h4>
+                <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> <span>(189)</span></div>
+                <div class="product-price"><span class="current">$329.00</span><span class="original">$399.00</span></div>
+              </div>
+              <div class="product-footer">
+                <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+              </div>
+            </div>
+
+            <div class="product-card reveal">
+              <div class="product-img">
+                <img src="assets/img/product-8.jpg" alt="Minimalist Desk Lamp">
+                <div class="product-badges"><span class="badge badge-green">New</span></div>
+                <div class="product-actions">
+                  <button class="product-action-btn" aria-label="Wishlist"><i class="far fa-heart"></i></button>
+                  <button class="product-action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+                </div>
+              </div>
+              <div class="product-body">
+                <div class="product-vendor"><span class="badge badge-verified">Verified</span> Artisan Home</div>
+                <h4>Minimalist Desk Lamp</h4>
+                <div class="product-rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i> <span>(72)</span></div>
+                <div class="product-price"><span class="current">$79.00</span></div>
+              </div>
+              <div class="product-footer">
+                <button class="btn btn-primary btn-sm" data-add><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination">
+            <button class="pagination-btn active">1</button>
+            <button class="pagination-btn">2</button>
+            <button class="pagination-btn">3</button>
+            <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-leaf"><i class="fas fa-leaf"></i></span>
+            ESHOPPER
+          </a>
+          <p>Your trusted online marketplace connecting you with verified vendors and curated products. Quality guaranteed.</p>
+          <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Market Street, New York, USA</p>
+            <p><i class="fas fa-envelope"></i> hello@eshopper.com</p>
+            <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Become a Vendor</a>
+          </div>
+        </div>
+        <div>
+          <h4>Customer Care</h4>
+          <div class="footer-links">
+            <a href="#">My Account</a>
+            <a href="#">Order Tracking</a>
+            <a href="#">Returns & Refunds</a>
+            <a href="#">FAQs</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p style="font-size:0.85rem; margin-bottom:1rem">Subscribe for deals and new vendor announcements.</p>
+          <form class="footer-newsletter-form" data-form>
+            <input type="email" placeholder="Your email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year></span> ESHOPPER. All rights reserved.</p>
+        <div class="footer-payments">
+          <span>VISA</span>
+          <span>MC</span>
+          <span>AMEX</span>
+          <span>PayPal</span>
+          <span>Apple Pay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"><span class="toast-icon"><i class="fas fa-check-circle"></i></span> Added to cart!</div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
